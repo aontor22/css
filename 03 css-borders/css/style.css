@@ -1,0 +1,7 @@
+.bord{
+    text-align: center;
+    border-width: 15px 5px;
+    border-radius: 15px;
+    border-style: dashed inset double groove;
+    border-color: red green;
+}
