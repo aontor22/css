@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+}
+div{
+    width: 1000px;
+    height: 800px;
+    background-image: url(../gg.png);
+    background-repeat: no-repeat;
+    background-size: 450px 600px;
+    background-attachment: fixed;
+    background-position: center;
+}
+div:nth-of-type(2){
+    width: 1000px;
+    height: 800px;
+    background: #000 url(../gg.png) no-repeat center 450px 600px;
+}
