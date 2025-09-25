@@ -1,0 +1,32 @@
+a{
+    width: 200px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: yellow;
+}
+a:visited{
+    color: blue;
+    background-color: lightgray;
+}
+a:hover{
+    background-color: orange;
+    color: green;
+}
+a:active{
+    background-color: black;
+    color: white;
+}
+
+ul{
+
+    list-style-type: upper-alpha;
+    margin-left: 50px;
+    list-style: square;
+    /* list-style-image: url('../images/checkbox.png'); */
+    list-style-position: inside;
+    font-size: 20px;
+}
