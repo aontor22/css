@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: dotted underline;
+    text-transform: uppercase;
+    text-indent: 10px;
+    letter-spacing: 7px;
+    word-spacing: 15px;
+    line-height: 1.5;
+}
+h2{
+    font-family: Bitcount Single Ink, monospace;
+    color: green;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: dotted overline;
+    text-transform: lowercase;
+    font-size: 55px;
+    text-decoration-thickness: 77px;
+}
+h3{
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    color: orange;
+    font-size: 16px;
+    text-align: right;
+    text-decoration: dotted line-through;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    font-variant: small-caps;
+    font-feature-settings: "smcp" on;
+    font-kerning: normal;
+    font-synthesis: weight style;
+    font-variant-caps: all-small-caps;
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums;
+    font-variant-east-asian: full-width;
+    font-variant-alternates: historical-forms;
+    font-variant-position: sub;
+    font: italic small-caps bold 16px/2 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+    font-size: 14px;
+    text-align: justify;
+    text-decoration: dotted underline overline;
+}
+
