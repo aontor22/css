@@ -1,0 +1,42 @@
+h1{
+    /* text-align: center; */
+    display: inline-block;
+}
+span{
+    text-align: center;
+    /* display: block; */
+}
+ul li{
+    display: inline;
+    /* display: flex; */
+}
+
+.h1{
+    border: 2px solid red;
+    width: 500px;
+    margin: auto;
+}
+.h2{
+    border: 2px solid blue;
+    max-width: 300px;
+    margin: auto;
+}
+.green-box{
+    width: 300px;
+    height: 200px;
+    background-color: green;
+}
+.red-box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border-radius: 50px;
+}
+.name{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
