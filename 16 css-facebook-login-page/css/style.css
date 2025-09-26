@@ -1,0 +1,265 @@
+:root {
+    --fb-blue: #1877f2;
+    --green: #42b72a;
+    --bg: #f0f2f5;
+    --card: #fff;
+    --border: #dddfe2;
+    --text: #1c1e21;
+    --shadow: 0 2px 12px rgba(0, 0, 0, .1);
+    --radius: 8px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+}
+
+/* Main layout */
+.page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px 20px;
+    margin: 80px;
+}
+
+.layout {
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left block */
+.brand {
+    padding-left: 20px
+}
+.brand .tagline{
+    font-weight: 500;
+}
+
+.logo {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--fb-blue);
+    line-height: 1;
+    letter-spacing: -.5px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.tagline {
+    margin-top: 12px;
+    font-size: 28px;
+    max-width: 520px;
+}
+
+/* Card */
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px 16px 24px;
+    width: 400px;
+    height: 350px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.input {
+    width: 100%;
+    height: 52px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+}
+
+.input::placeholder {
+    color: #8a8d91
+}
+
+.input:focus {
+    border-color: var(--fb-blue);
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, .15);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: filter .15s ease, transform .02s ease-in-out;
+    color: #fff;
+    background: var(--fb-blue);
+    font-size: 20px;
+}
+
+.btn:hover {
+    filter: brightness(.95)
+}
+
+.btn:active {
+    transform: translateY(1px)
+}
+
+.btn-green {
+    background: var(--green);
+    font-size: 17px
+}
+
+.forgot {
+    display: block;
+    text-align: center;
+    color: var(--fb-blue);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0 4px;
+}
+
+.divider {
+    height: 1px;
+    background: #dadde1;
+    margin: 16px 0
+}
+
+.center {
+    display: flex;
+    justify-content: center
+}
+
+.create-page {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 22px;
+}
+.create-page a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background: transparent
+}
+
+.footer-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+    color: #8a8d91;
+}
+
+.lang,
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    align-items: center;
+}
+
+.lang li,
+.links li {
+    font-size: 12px
+}
+
+.lang a,
+.links a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.lang a:hover,
+.links a:hover {
+    text-decoration: underline
+}
+
+.more {
+    border: 1px solid #ccd0d5;
+    background: #f5f6f7;
+    color: #4b4f56;
+    border-radius: 2px;
+    height: 18px;
+    width: 26px;
+    line-height: 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hr {
+    height: 1px;
+    background: #dadde1;
+    margin: 12px 0;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width:900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 24px
+    }
+
+    .brand {
+        padding: 0;
+        text-align: center
+    }
+
+    .logo {
+        font-size: 48px
+    }
+
+    .tagline {
+        font-size: 20px;
+        margin: 8px auto 0
+    }
+
+    .page {
+        padding-top: 24px
+    }
+}
+
+@media (max-width:380px) {
+    .card {
+        padding: 16px 12px 20px
+    }
+
+    .btn {
+        font-size: 18px
+    }
+}
