@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grad{
+    width: 300px;
+    height: 200px;
+    /* background: linear-gradient( red 10%, yellow 40%, green 50%); */
+    /* background: linear-gradient( to right, red, orange, yellow, green, blue, indigo, violet); */
+    /* background: linear-gradient(rgba(142,68,173,0), rgba(142,68,173,1.0)); */
+    background: radial-gradient(red 10%, yellow 30%, green 60%);
+    margin-bottom: 20px;
+}
+.shad{
+    width: 300px;
+    height: 200px;
+    background: white;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid black;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -5px 0 red,5px 0 green, 5px 0 blue;
+}
+.trani{
+    width: 300px;
+    height: 200px;
+    background: orange;
+    margin-bottom: 20px;
+    transition: 5s ease-in;
+}
+.trani:hover{
+    width: 500px;
+    height: 300px;
+    background: purple;
+    transform: rotate(360deg);
+}
+.tranf{
+    width: 300px;
+    height: 200px;
+    background: lightblue;
+    transition: 5s ease-in;
+}
+.tranf:hover{
+    width: 500px;
+    height: 300px;
+    background: lightgreen;
+    transform: scale(1.5);
+}
+
+.ani{
+    width: 300px;
+    height: 200px;
+    background: lightgrey;
+}
+@keyframes anima{
+    0%{background: lightgrey; transform: rotate(0deg);}
+    25%{background: lightcoral; transform: rotate(90deg);}
+    50%{background: lightseagreen; transform: rotate(180deg);}
+    75%{background: lightpink; transform: rotate(270deg);}
+    100%{background: lightgoldenrodyellow; transform: rotate(360deg);}
+}
+.ani:hover{
+    animation: anima 5s infinite;
+}
