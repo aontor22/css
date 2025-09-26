@@ -1,0 +1,87 @@
+.menu{
+    background: yellow;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li:hover{ 
+    background: #333;
+    color: white;
+}
+
+
+
+
+
+.header{
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: auto;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+}
+
+.a{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background: yellow;
+    border: 2px solid #000;
+    padding: 5px;
+}
+.b{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: rgb(26, 216, 19);
+    border: 2px solid #000;
+    padding: 5px;
+}
+.c{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: rgb(10, 44, 235);
+    border: 2px solid #000;
+    padding: 5px;
+}
+.float-pos{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid red;
+    float: right;
+}
+p{
+    clear: both;
+}
+
+.box{
+    height: 200px;
+    background: #233;
+    width: 25%;
+    float: left;
+}
+
+.box1{
+    background: red;
+}
+.box2{
+    background: blue;
+}
+.box3{
+    background: green;
+}
+.box4{
+    background: yellow;
+}
