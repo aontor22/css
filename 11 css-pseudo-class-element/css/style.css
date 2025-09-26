@@ -1,0 +1,18 @@
+a:hover{
+    color: red;
+}
+
+h2:nth-child(3){
+    color: blue;
+}
+h2:last-child{
+    color: green;
+}
+h2::after{
+    content: " - (pseudo element)";
+    color: orange;
+}
+p::first-letter{
+    font-size: 200%;
+    color: purple;
+}
