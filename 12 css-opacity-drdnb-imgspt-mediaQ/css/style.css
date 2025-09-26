@@ -86,3 +86,32 @@ ul li a:hover{
 .dropdown-content a:hover{
     background: #f1f1f1;
 }
+
+
+@media screen and (max-width: 600px){
+    .img, .img1{
+        width: 100%;
+        height: auto;
+    }
+    .icons ul li{
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    ul li{
+        float: none;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .icons ul li a{
+        height: 48px;
+        width: 48px;
+        border: 2px solid magenta;
+    }
+}
+@media screen and (max-width: 900px){
+    .dropdown-content{
+        position: static;
+    }
+}
